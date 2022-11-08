@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Serif:opsz@8..144&display=swap');
+
+:root {
+    --white: rgb(238, 238, 238);
+    --blue: #00ADB5;
+    --grey: #393E46;
+    --black: #222831;
+}
+
+/* nav, footer{
+    background-image: linear-gradient(to bottom, var(--grey), var(--black));
+} 
+footer{
+    margin-bottom: 0;
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+h2, h3, h5{
+    font-family: 'Roboto Serif', serif;
+    color: var(--white);
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+}
+body{
+    background-image: linear-gradient(to bottom right, var(--black), var(--blue));
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    /* outline: 1px solid var(--grey); */
+}
+
+body::-webkit-scrollbar-track{
+  background-color: var(--black);
+}
+
+@media (max-width: 576px) {
+    h2{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 17px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (min-width: 576px) {
+    h2{
+        font-size: 48px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    h5{
+        font-size: 17px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (min-width: 768px) {
+    h2{
+        font-size: 51px;
+    }
+    h3{
+        font-size: 31px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+@media (min-width: 992px) {
+    h2{
+        font-size: 54px;
+    }
+    h3{
+        font-size: 34px;
+    }
+    h5{
+        font-size: 19px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1200px) {
+    h2{
+        font-size: 57px;
+    }
+    h3{
+        font-size: 37px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1400px) {
+    h2{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+nav{
+    background-image: linear-gradient(to bottom, var(--grey), var(--black));
+}
+#spantoggler{
+    color: var(--white);   
+}
+.navbar-toggler{
+    outline: none !important;
+    box-shadow: none !important;
+}
+#n2{
+    justify-content: end;
+}
+.nav-item{
+    transition: 0.2s ease;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+.nav-item a, .nav-item a:active{
+    color: var(--white) !important;
+}
+
+.nav-item:hover{
+    background-color: var(--blue);
+    transition: 0.5s ease;
+}
+.nav-item:hover a{
+    color: var(--white);
+}
+
