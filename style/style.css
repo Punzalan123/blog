@@ -34,7 +34,7 @@ p{
     color: var(--white);
 }
 body{
-    background-image: linear-gradient(to bottom right, var(--black), var(--blue));
+    background-image: linear-gradient(to top right, rgb(63, 0, 113), var(--blue));
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,8 +73,22 @@ body::-webkit-scrollbar-track{
         font-size: 14px;
     }
     .pic img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+    .homebox{
+        padding: 35px 10px;
+    }
+    .social ul li{
+        margin: 0 10px 50px;
+    }
+    .social ul li .fab{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .social ul li a{
+        width: 40px;
+        height: 40px;    
     }
     .galler-pic img{
         width: 420px;
@@ -96,8 +110,22 @@ body::-webkit-scrollbar-track{
         font-size: 14px;
     }
     .pic img{
-        width: 290px;
-        height: 290px;
+        width: 220px;
+        height: 220px;
+    }
+    .homebox{
+        padding: 35px 30px;
+    }
+    .social ul li{
+        margin: 0 11px 40px;
+    }
+    .social ul li .fab{
+        font-size: 21px;
+        line-height: 42px;
+    }
+    .social ul li a{
+        width: 42px;
+        height: 42px;
     }
     .galler-pic img{
         width: 435px;
@@ -119,8 +147,22 @@ body::-webkit-scrollbar-track{
         font-size: 15px;
     }
     .pic img{
-        width: 330px;
-        height: 330px;
+        width: 230px;
+        height: 230px;
+    }
+    .homebox{
+        padding: 35px 30px;
+    }
+    .social ul li{
+        margin: 0 12px 30px;
+    }
+    .social ul li .fab{
+        font-size: 22px;
+        line-height: 44px;
+    }
+    .social ul li a{
+        width: 44px;
+        height: 44px;    
     }
     .galler-pic img{
         width: 450px;
@@ -142,13 +184,27 @@ body::-webkit-scrollbar-track{
         font-size: 16px;
     }
     .pic img{
-        width: 370px;
-        height: 370px;
+        width: 240px;
+        height: 240px;
     }
     .galler-pic img{
         width: 420px;
         margin: 20px 0;
         height: 280px;
+    }
+    .homebox{
+        padding: 30px 0;
+    }
+    .social ul li{
+        margin: 0 13px 25px;
+    }
+    .social ul li .fab{
+        font-size: 23px;
+        line-height: 46px;
+    }
+    .social ul li a{
+        width: 46px;
+        height: 46px;    
     }
 }
 @media (min-width: 1200px) {
@@ -165,8 +221,22 @@ body::-webkit-scrollbar-track{
         font-size: 16px;
     }
     .pic img{
-        width: 410px;
-        height: 410px;
+        width: 250px;
+        height: 250px;
+    }
+    .homebox{
+        padding: 30px 0;
+    }
+    .social ul li{
+        margin: 0 14px 25px;
+    }
+    .social ul li .fab{
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .social ul li a{
+        width: 48px;
+        height: 48px;    
     }
     .galler-pic img{
         width: 480px;
@@ -187,9 +257,23 @@ body::-webkit-scrollbar-track{
     p {
         font-size: 17px;
     }
+    .homebox{
+        padding: 40px 0;
+    }
+    .social ul li{
+        margin: 0 15px 25px;
+    }
     .pic img{
-        width: 450px;
-        height: 450px;
+        width: 270px;
+        height: 270px;
+    }
+    .social ul li .fab{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .social ul li a{
+        width: 50px;
+        height: 50px;    
     }
     .galler-pic img{
         width: 540px;
@@ -249,34 +333,95 @@ nav{
 .home{
     display: flex;
     flex-direction: column;
-    min-height: 50vh;
+    min-height: 100vh;
+    justify-content: center;
 }
 
-.home h2, .gall h2, .hob h2{
+.homebox{
+    background-image: linear-gradient(to bottom right, rgb(21, 0, 80), rgb(63, 0, 113), rgb(251, 37, 118));
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: 54px;
+    width: 90%;
+}
+
+.gall h2, .hob h2{
     text-align: center;
     margin-top: 60px;
 }
-.home h3, .home h5, .gall h5, .hob h5{
+.homebox h2, .homebox h3, .homebox h5, .gall h5, .hob h5{
     text-align: center;
 }
-.home h5{
-    margin: 0 20px 30px 20px;
+.homebox h5{
+    margin: 0 20px;
 }
 
 .pic{
-    margin: 50px 0;
+    margin: 30px 0 20px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.home .pic img{
+.homebox .pic img{
     transition: 0.2s ease;
     background: linear-gradient(90deg, #2cff87, #586eff);
     background-clip: padding-box;
     border-radius: 50%;
     padding: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 } 
+
+.social ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.social ul li{
+    list-style-type: none;
+}
+.social ul li .fab{
+    /* font-size: 25px; */
+    /* line-height: 50px; */
+    transition: .3s;
+}
+
+.social ul li a .fab{
+    color: #fff;
+}
+.social ul li a{
+    position: relative;
+    display: block;
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 50%;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.social ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social ul li:nth-child(1) a{
+    background-color: #4267B2;
+}
+.social ul li:nth-child(2) a{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.social ul li:nth-child(3) a{
+    background-color: #0e76a8 ;
+}
+.social ul li:nth-child(4) a{
+    background-color: #1DA1F2;
+}
+.social ul li:nth-child(5) a{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+
 .pic img:hover{
     border-radius: 60px;
     transition: 0.5s ease;
@@ -320,8 +465,9 @@ nav{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, var(--black), var(--grey));
-    border-radius: 60px;
+    background-image: linear-gradient(to bottom, rgb(21, 0, 80), rgb(63, 0, 113));
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 90%;
     transition: 0.2s ease;
 }
 
@@ -341,7 +487,7 @@ nav{
 }
 .galler-pic:hover img{
     opacity: 1;
-    border-radius: 80px;
+    border-radius: 10px;
     transition: 0.5s ease;
 }
 .galler-pic h3{
