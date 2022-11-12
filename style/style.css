@@ -76,7 +76,7 @@ body::-webkit-scrollbar-track{
         width: 200px;
         height: 200px;
     }
-    .homebox{
+    .homebox, .hob-box{
         padding: 35px 10px;
     }
     .social ul li{
@@ -113,7 +113,7 @@ body::-webkit-scrollbar-track{
         width: 220px;
         height: 220px;
     }
-    .homebox{
+    .homebox, .hob-box{
         padding: 35px 30px;
     }
     .social ul li{
@@ -150,7 +150,7 @@ body::-webkit-scrollbar-track{
         width: 230px;
         height: 230px;
     }
-    .homebox{
+    .homebox, .hob-box{
         padding: 35px 30px;
     }
     .social ul li{
@@ -192,7 +192,7 @@ body::-webkit-scrollbar-track{
         margin: 20px 0;
         height: 280px;
     }
-    .homebox{
+    .homebox, .hob-box{
         padding: 30px 0;
     }
     .social ul li{
@@ -224,7 +224,7 @@ body::-webkit-scrollbar-track{
         width: 250px;
         height: 250px;
     }
-    .homebox{
+    .homebox, .hob-box{
         padding: 30px 0;
     }
     .social ul li{
@@ -257,7 +257,7 @@ body::-webkit-scrollbar-track{
     p {
         font-size: 17px;
     }
-    .homebox{
+    .homebox, .hob-box{
         padding: 40px 0;
     }
     .social ul li{
@@ -335,6 +335,7 @@ nav{
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .homebox{
@@ -344,11 +345,11 @@ nav{
     width: 90%;
 }
 
-.gall h2, .hob h2{
+.gall h2{
     text-align: center;
     margin-top: 60px;
 }
-.homebox h2, .homebox h3, .homebox h5, .gall h5, .hob h5{
+.homebox h2, .hob h2, .homebox h3, .homebox h5, .gall h5, .hob h5, .inter-box h2, .inter-box h5{
     text-align: center;
 }
 .homebox h5{
@@ -469,9 +470,10 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: 90%;
     transition: 0.2s ease;
+    margin-top: 108px;
 }
 
-.gall h5{
+.gall h5, #things, #these{
     margin-bottom: 50px;
 }
 
@@ -523,8 +525,56 @@ nav{
 .hob{
     display: flex;
     flex-direction: column;
-    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 54px;
+}
+.hob .hob-box{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 90%;
+    background: linear-gradient(to bottom , rgb(63, 0, 113) ,var(--blue));
+    margin-top: 54px;
+}
 
+.hob-imgs {
+    transition: 0.1s ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hob1 img{
+    width: 360px;
+    height: 240px;
+}
+.hob1{
+    transition: 0.1s ease;
+    width: 360px;
+    height: 240px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.hob1:hover img{
+    opacity: 0.5;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.hob1:hover {
+    background-color: var(--grey);
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+.hob1 h5{
+    opacity: 0;
+    position: absolute;
+    transition: 0.2s ease;
+}
+.hob1:hover h5{
+    opacity: 1;
+    transition: 0.5s ease;
 }
 
 
@@ -534,6 +584,14 @@ nav{
 .inter{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(to bottom right, var(--black), var(--grey));
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+    margin-top: 108px;
+}
+
+.inter-box{
+    background-image: linear-gradient(to bottom, var(--blue), rgb(251, 37, 118));
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
