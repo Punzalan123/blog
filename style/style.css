@@ -79,6 +79,9 @@ body::-webkit-scrollbar-track{
     .homebox, .hob-box{
         padding: 35px 10px;
     }
+    .hob-box{
+        padding: 35px 10px 52px 10px;
+    }
     .social ul li{
         margin: 0 10px 50px;
     }
@@ -94,6 +97,9 @@ body::-webkit-scrollbar-track{
         width: 420px;
         margin: 20px 0;
         height: 280px;
+    }
+    .reb{
+        flex-direction: column-reverse;
     }
 }
 @media (min-width: 576px) {
@@ -113,8 +119,11 @@ body::-webkit-scrollbar-track{
         width: 220px;
         height: 220px;
     }
-    .homebox, .hob-box{
+    .homebox{
         padding: 35px 30px;
+    }
+    .hob-box{
+        padding: 35px 30px 52px 30px;
     }
     .social ul li{
         margin: 0 11px 40px;
@@ -131,6 +140,9 @@ body::-webkit-scrollbar-track{
         width: 435px;
         margin: 20px 0;
         height: 290px;
+    }
+    .reb{
+        flex-direction: column-reverse;
     }
 }
 @media (min-width: 768px) {
@@ -150,8 +162,11 @@ body::-webkit-scrollbar-track{
         width: 230px;
         height: 230px;
     }
-    .homebox, .hob-box{
+    .homebox{
         padding: 35px 30px;
+    }
+    .hob-box{
+        padding: 35px 30px 52px 30px;
     }
     .social ul li{
         margin: 0 12px 30px;
@@ -168,6 +183,9 @@ body::-webkit-scrollbar-track{
         width: 450px;
         margin: 20px 0;
         height: 300px;
+    }
+    .reb{
+        flex-direction: column-reverse;
     }
 }
 @media (min-width: 992px) {
@@ -192,8 +210,11 @@ body::-webkit-scrollbar-track{
         margin: 20px 0;
         height: 280px;
     }
-    .homebox, .hob-box{
+    .homebox{
         padding: 30px 0;
+    }
+    .hob-box{
+        padding: 30px 0 45px;
     }
     .social ul li{
         margin: 0 13px 25px;
@@ -205,6 +226,9 @@ body::-webkit-scrollbar-track{
     .social ul li a{
         width: 46px;
         height: 46px;    
+    }
+    .reb{
+        flex-direction: column-reverse;
     }
 }
 @media (min-width: 1200px) {
@@ -224,8 +248,11 @@ body::-webkit-scrollbar-track{
         width: 250px;
         height: 250px;
     }
-    .homebox, .hob-box{
+    .homebox{
         padding: 30px 0;
+    }
+    .hob-box{
+        padding: 30px 0 45px;
     }
     .social ul li{
         margin: 0 14px 25px;
@@ -243,6 +270,9 @@ body::-webkit-scrollbar-track{
         margin: 25px 0;
         height: 320px;
     }
+    .reb{
+        flex-direction: row;
+    }
 }
 @media (min-width: 1400px) {
     h2{
@@ -257,8 +287,11 @@ body::-webkit-scrollbar-track{
     p {
         font-size: 17px;
     }
-    .homebox, .hob-box{
+    .homebox{
         padding: 40px 0;
+    }
+    .hob-box{
+        padding: 40px 0 60px;
     }
     .social ul li{
         margin: 0 15px 25px;
@@ -534,6 +567,7 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     width: 90%;
     background: linear-gradient(to bottom , rgb(63, 0, 113) ,var(--blue));
+    padding-top: 54px;
     margin-top: 54px;
 }
 
@@ -581,11 +615,12 @@ nav{
 
 /* HOBBIES PAGE END */
 
+/* INTERESTS PAGE START */
+
 .inter{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     min-height: 100vh;
     margin-top: 108px;
 }
@@ -593,5 +628,9 @@ nav{
 .inter-box{
     background-image: linear-gradient(to bottom, var(--blue), rgb(251, 37, 118));
     width: 90%;
+    padding: 54px 40px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
