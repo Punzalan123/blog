@@ -32,6 +32,7 @@ h2, h3, h5{
 p{
     font-family: 'Inter', sans-serif;
     color: var(--white);
+    transition: 0.1s ease;
 }
 body{
     background-image: linear-gradient(to top right, rgb(63, 0, 113), var(--blue));
@@ -252,7 +253,7 @@ body::-webkit-scrollbar-track{
         padding: 30px 0;
     }
     .hob-box{
-        padding: 30px 0 45px;
+        padding: 30px 40px 45px;
     }
     .social ul li{
         margin: 0 14px 25px;
@@ -564,7 +565,7 @@ nav{
     margin-top: 54px;
 }
 .hob .hob-box{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 13px 26px, rgba(0, 0, 0, 0.22) 0px 10px 6px;
     width: 90%;
     background: linear-gradient(to bottom , rgb(63, 0, 113) ,var(--blue));
     padding-top: 54px;
@@ -595,6 +596,7 @@ nav{
     opacity: 0.5;
     transition: 0.5s ease;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .hob1:hover {
     background-color: var(--grey);
@@ -622,15 +624,41 @@ nav{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    margin-top: 108px;
+    margin: 108px 0;
 }
 
 .inter-box{
-    background-image: linear-gradient(to bottom, var(--blue), rgb(251, 37, 118));
+    background-image: linear-gradient(to bottom, var(--blue), rgb(63, 0, 113));
     width: 90%;
     padding: 54px 40px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.card{
+    margin: 35px 0;
+    background-image: linear-gradient(to bottom right, rgb(63, 0, 113), rgb(21, 0, 80));
+    border: none;
+    transition: 1s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 3px;
+}
+footer{
+    background-image: linear-gradient(to top, var(--grey), var(--black));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+footer hr{
+    color: var(--white);
+    height: 2px;
+    width: 100%;
+
 }
